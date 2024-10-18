@@ -1,0 +1,23 @@
+python3 -u /home/inferno/Downloads/Nonstationary_Transformers-main/run.py \
+  --is_training 1 \
+  --root_path /home/inferno/Downloads/Nonstationary_Transformers-main/dataset/traffic \
+  --data_path traffic.csv \
+  --model_id traffic_96_96 \
+  --model ns_Transformer \
+  --data custom \
+  --features M \
+  --seq_len 96 \
+  --label_len 48 \
+  --pred_len 96 \
+  --e_layers 2 \
+  --d_layers 1 \
+  --factor 3 \
+  --enc_in 862 \
+  --dec_in 862 \
+  --c_out 862 \
+  --gpu 0 \
+  --des 'Exp_h128_l2' \
+  --p_hidden_dims 128 128 \
+  --p_hidden_layers 2 \
+  --itr 1 &
+

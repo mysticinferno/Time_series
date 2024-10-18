@@ -1,0 +1,22 @@
+python3 -u /home/inferno/Downloads/Nonstationary_Transformers-main/run.py \
+  --is_training 1 \
+  --root_path /home/inferno/Downloads/Nonstationary_Transformers-main/dataset/illness \
+  --data_path national_illness.csv \
+  --model_id ili_36_24 \
+  --model ns_llm \
+  --data custom \
+  --features M \
+  --seq_len 36 \
+  --label_len 18 \
+  --pred_len 24 \
+  --e_layers 2 \
+  --d_layers 1 \
+  --factor 3 \
+  --enc_in 7 \
+  --dec_in 7 \
+  --c_out 7 \
+  --gpu 0 \
+  --des 'Exp_h32_l2' \
+  --p_hidden_dims 32 32 \
+  --p_hidden_layers 2 \
+  --itr 1
